@@ -19,7 +19,8 @@ def preprocess_image(image, watermark_type):
     elif image_w == image_h:
         image_type = "landscape"
     else:
-        image_type = "potrait"
+      
+        image_type = "landscape"
 
     mask_image = Image.open(
         "utils/{}/{}/mask.png".format(watermark_type, image_type))
